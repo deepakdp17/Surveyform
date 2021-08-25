@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="survey-form of soccer">
+        <meta name="author" content="Deepak Dp">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="surveyformstyle.css">
+    </head>
+    <body>
+       <h1 id="title">Football Survey Form</h1>
+       <p id="description">Pick your Favourites.</p>
+       <form id="survey-form">
+           <div class="form-display">
+                <label id="name-label"for="name">Name</label>
+                <input class="form-control"id="name"type="text" name="name"placeholder="Enter your name" required="">       
+            </div>
+            <div class="form-display">
+                <label for="email"id="email-label">E-mail</label>
+                <input class="form-control"id="email"type="email"name="email"placeholder="Enter your E-mail address"required=>
+            </div>
+            <div class="form-display">
+                <label for="number"id="number-label">Age<span class="clue">(optional)</span></label>
+                <input id="number"class="form-control"type="number"name="number"placeholder="Age"min="10"max="99">
+            </div>
+            <div class="form-display">
+                <p id="label">Nationality</p>
+                <input id="Nationality"name="Nationality"type="text"required=""class="form-control"placeholder="Enter your Country name">
+            </div>
+            <div class="form-display">
+                <p id="label">Which position you play in football?</p>
+                <select id="dropdown"class="form-control"name="dropdown"required="">
+                    <option disabled="" selected="" value="">Select your position</option>
+                    <option value="Goalkeeper">Goal keeper</option>
+                    <option value="Striker">Striker</option>
+                    <option value="Midfielder">Mid fielder</option>
+                    <option value="Defender">Defender</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-display">
+                <p id="label">Who is the best footballer in the world?</p>
+                <label>
+                    <input class="input-radio"name="user-recommend"type="radio"checked=""value="Cristiano Ronaldo">
+                    Cristiano Ronaldo
+                </label>
+                <label>
+                    <input class="input-radio"name="user-recommend"type="radio"value="Lionel Messi">
+                    Lionel Messi
+                </label>
+                <label>
+                    <input class="input-radio"name="user-recommend"type="radio"value="Neymer Jr">
+                    Neymer Jr
+                </label>
+            </div>
+            <div class="form-display">
+                <p id="label">National Football Team</p>
+                <input id="Nteam"name="Nteam"type="text"required=""class="form-control"placeholder="Enter your favourite National Team">
+            </div>
+            <div class="form-display">
+                <p id="label">Football Club</p>
+                <input id="Cteam"name="Cteam"type="text"required=""class="form-control"placeholder="Enter your favourite Club Team">
+            </div>
+            <div class="form-display">
+                <p id="label">Which are the Top Leagues you would love to watch?<span class="clue">(check all that apply)</span></p>
+                <label>
+                    <input class="input-checkbox"name="prefer"value="Laliga"type="checkbox">
+                    Laliga
+                </label>
+                <label>
+                    <input class="input-checkbox"name="prefer"value="Primier League(eng)"type="checkbox">
+                    Primier League (England)
+                </label>
+                <label>
+                    <input class="input-checkbox"name="prefer"value="Primeira Liga(por)"type="checkbox">
+                    Primeira Liga (Portugal)
+                </label>
+                <label>
+                    <input class="input-checkbox"name="prefer"value="Serie A(bra)"type="checkbox">
+                    Serie A (Brazil)
+                </label>
+                <label>
+                    <input class="input-checkbox"name="prefer"value="Serie A(italy)"type="checkbox">
+                    Serie A (Italy)
+                </label>
+                <label>
+                    <input class="input-checkbox"name="prefer"value="Dutch league"type="checkbox">
+                    Dutch League
+                </label>
+            </div>
+            <div class="form-display">
+                <p>Any comments or Suggestions</p>
+                <textarea id="comments"name="comment"class="input-textarea"placeholder="Enter your comments here"></textarea>
+            </div>
+            <div class="form-display">
+                <button id="submit"type="submit"class="submit-button">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
